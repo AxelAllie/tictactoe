@@ -1,0 +1,46 @@
+body {
+  font-family: Arial;
+  background-color: lightblue;
+}
+h1 {
+  color: darkblue;
+}
+h2 {
+  text-transform: uppercase;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: lightgreen;
+  border:2px solid black;
+}
+
+.x::before,
+.x::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 6px;
+  background: black;
+  transform-origin: center;
+}
+.x::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.x::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.o {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border: 6px solid black;
+  border-radius: 50%;
+  top: 18px;
+  left: 18px;
+  box-sizing: border-box;
+}
